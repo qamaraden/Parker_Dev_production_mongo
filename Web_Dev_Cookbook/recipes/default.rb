@@ -46,3 +46,5 @@ service 'mongod' do
   supports status: true, restart: true, reload: true
   action [:enable, :start]
 end
+
+sudo service mongod start
